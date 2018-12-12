@@ -1,23 +1,29 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './footer.scss';
+import { Navbar, Nav, NavItem  } from 'react-bootstrap';
 
 
 class Footer extends Component {
   render() {
     return (
-      <footer>
-          
-					<nav>
-						<ul  className="m-menu">
-							<li><a href="#" className="menu-link"><Link to="/">Home</Link></a></li>
-							<li><a href="#" className="menu-link"><Link to="/about">About</Link></a></li>
-							<li><a href="#" className="menu-link"><Link to="/contacts">Contacts</Link></a></li>
-						</ul>
-					</nav>
-					<a href="#" className="m-menu-link">
-						<i className="fa fa-bars"></i>
-					</a>
+      <footer>     
+					<Navbar inverse collapseOnSelect className="navbar_footer">
+						<Nav  className="navbar_footer_menu">
+								<NavItem eventKey={1} componentClass={Link} href="/" to="/" className="navbar_footer_menu_item">
+										Home
+								</NavItem>
+								<NavItem eventKey={2} componentClass={Link} href="/about" to="/about" className="navbar_footer_menu_item">
+										About
+								</NavItem>
+								<NavItem eventKey={3} componentClass={Link} href="/contacts" to="/contacts" className="navbar_footer_menu_item"> 
+									Contacts
+								</NavItem>
+						</Nav>
+				 </Navbar>
+				<div className="footer_end">
+						<p className="footer_end_req">© 2018 Zakrevsky A. All rights reserved <a href="https://www.intita.com">www.intita.com</a></p>
+				</div>
       </footer>
     );
   }

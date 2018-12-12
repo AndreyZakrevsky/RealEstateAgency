@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './header.scss';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavItem ,MenuItem , NavDropdown} from 'react-bootstrap';
+import Slider from './slider'
+
+
 
 class Header extends Component {
   render() {
@@ -35,11 +38,12 @@ class Header extends Component {
 											   Login  
 											</NavItem>  
 											<NavItem eventKey={6} componentClass={Link} href="#"  to="/about" className="nav_menu_item">					  
-											   Registration
+											   Register
 											</NavItem>
 								</Nav>
 					  </Navbar.Collapse>
-				</Navbar>;					
+				</Navbar>;
+			 <Slider/> 
       </header>
     );
   }

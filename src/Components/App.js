@@ -3,9 +3,8 @@ import { BrowserRouter , Route } from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
 import Header from './header';
 import Footer from './footer';
-import  Home from './home'
-import About from './about'
-import Contacts from './contacts'
+import Main from './main';
+import './app.scss';
 
 const history = createBrowserHistory();
 
@@ -13,15 +12,12 @@ class App extends Component {
   render() {
     return (
         <BrowserRouter history={history}>
-            <div >
+            <div className="app">
               <Header/>
-                  <Route exact path='/' component={Home} />
-                  <Route exact path='/about' component={About} />
-                  <Route exact path='/contacts' component={Contacts} />
-              {/* <Footer/> */}
+                 <Main/>
+              <Footer/>
             </div>   
-      </BrowserRouter>
-     
+        </BrowserRouter>    
     );
   }
 }

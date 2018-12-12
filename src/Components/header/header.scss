@@ -4,9 +4,16 @@ $header_text_color  :rgb(83, 63, 63) ;
 header{
     width: 100%;
     padding-top: ($size * 2);
+    flex-grow: 0;
+    background: white;
+    padding: 0;
     .navbar{
         background: white;
         border:none;
+        position: fixed;
+        z-index: 1;     
+        width: 100%;
+        min-height: 70px; 
         .navbar_toggle{
             background:$header_text_color;
         }
@@ -27,11 +34,15 @@ header{
             }
         }
         .nav_menu{
-            .nav_menu_item{
+            .nav_menu_item{          
+                border-left:1px solid yellow;
+                &:first-child {
+                    border:none; 
+                   }
                 a{
                     color:$header_text_color;
                     font-size: ($size * 2);
-                    font-family: 'Lalezar', cursive;
+                    font-family: 'Domine', serif;
                     &:hover{
                         cursor: pointer;                    
                         background-color: #666666;

@@ -1,5 +1,41 @@
+$footer_text_color:rgb(236, 240, 217);
+$background_footer: rgb(83, 63, 63);
+$size : 1rem; 
+
 footer{
+    background: $background_footer;
     width: 100%;
-    height: 200px;
-    background: green;
+    margin-bottom: 0;
+    color:$footer_text_color;
+    flex-grow: 0;
+    .navbar_footer{
+        background: none;
+        border:none;
+        .navbar_footer_menu{
+            .navbar_footer_menu_item{
+                a{
+                    font-size: ($size * 2);
+                    font-family: 'Domine', serif;
+                    &:hover{
+                        cursor: pointer;                    
+                        text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+                    }
+                }
+            }    
+        }    
+    }
+    .footer_end{
+        text-align: center;
+        .footer_end_req{
+            font-size:($size * 1.8);
+            a{
+                text-decoration: none;
+                color:$footer_text_color;
+                &:hover{
+                    cursor: pointer;                    
+                    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+                }
+            }
+        }
+    }
 }
