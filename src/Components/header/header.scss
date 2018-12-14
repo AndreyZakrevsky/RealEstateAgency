@@ -13,7 +13,7 @@ padding: 0;
     position: fixed;
     z-index: 1;     
     width: 100%;
-    min-height: 70px; 
+    min-height: ($size * 7); 
     .navbar_toggle{
         background:$header_text_color;
     }

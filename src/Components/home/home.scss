@@ -1,0 +1,38 @@
+$size : 1rem;
+$background_home: rgb(83, 63, 63);
+$buttons_color:rgb(83, 63, 63);
+
+.home{
+text-align: center;
+font-family: Anton ;
+    .home_body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .body_buy_rent{
+          width: 60%;
+          min-height: 100px;
+            a{
+                display: inline-block;
+                text-decoration: none;
+                margin: ( $size * 2.2 );
+                color: $buttons_color ; 
+                border: 1px solid $background_home;
+                font-size: ( $size * 1.7 );
+                border-radius: ( $size * 5 );
+                padding: ( $size * 1 ) ( $size * 3 );
+                font-family: 'Domine', serif; 
+                box-shadow: 1px 1px 2px yellow, 0 0 1em yellow;  
+                &:hover{
+                    color:white;
+                    background: $background_home;
+                    box-shadow: 1px 1px 2px blueviolet, 0 0 1em blueviolet;
+                }             
+            }
+        }
+        .body_description{
+
+        }
+    }
+}
