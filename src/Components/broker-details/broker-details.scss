@@ -1,0 +1,32 @@
+$footer_text_color:rgb(236, 240, 217);
+$background_footer: rgb(83, 63, 63);
+$size : 1rem;
+
+.broker_kard{
+width: 410px;  
+min-height: 150px;
+margin: 10px auto;
+display: flex;
+flex-direction: column;
+background: $background_footer;
+background: -webkit-linear-gradient(#648880, $background_footer);
+background:    -moz-linear-gradient(#648880, $background_footer); 
+border-radius:16px ;
+color:$footer_text_color;
+    .broker_image{    
+            img{
+                width: 90px;
+                height: 90px;
+                margin-left:calc((100% - 90px)/2);
+            }
+    }
+    .broker_body{
+        text-align: center;
+        color:rgb(223, 223, 145);
+        font-family: Anton;
+        p{
+            font-size: 16px;
+            font-family: 'Domine', serif;
+        }
+    }   
+}

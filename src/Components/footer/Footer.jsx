@@ -10,7 +10,7 @@ class Footer extends Component {
       <footer>     
 					<Navbar inverse collapseOnSelect className="navbar_footer">
 						<Nav  className="navbar_footer_menu">
-								<NavItem eventKey={1} componentClass={Link} href="/" to="/" className="navbar_footer_menu_item">
+								<NavItem  eventKey={1} componentClass={Link} href="/" to="/" className="navbar_footer_menu_item">
 										Home
 								</NavItem>
 								<NavItem eventKey={2} componentClass={Link} href="/about" to="/about" className="navbar_footer_menu_item">
@@ -22,7 +22,7 @@ class Footer extends Component {
 						</Nav>
 				 </Navbar>
 				<div className="footer_end">
-						<p className="footer_end_req">© 2018 Zakrevsky A. All rights reserved <a href="https://www.intita.com">www.intita.com</a></p>
+						<p className="footer_end_req">© 2018 Estate Agency. All rights reserved </p>
 				</div>
       </footer>
     );

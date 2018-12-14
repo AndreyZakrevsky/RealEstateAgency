@@ -2,57 +2,60 @@ $size : 1rem; //10px
 $header_text_color  :rgb(83, 63, 63) ;
 
 header{
-    width: 100%;
-    padding-top: ($size * 2);
-    flex-grow: 0;
+width: 100%;
+padding-top: ($size * 2);
+flex-grow: 0;
+background: white;
+padding: 0;
+.navbar{
     background: white;
-    padding: 0;
-    .navbar{
-        background: white;
-        border:none;
-        position: fixed;
-        z-index: 1;     
-        width: 100%;
-        min-height: 70px; 
-        .navbar_toggle{
-            background:$header_text_color;
+    border:none;
+    position: fixed;
+    z-index: 1;     
+    width: 100%;
+    min-height: 70px; 
+    .navbar_toggle{
+        background:$header_text_color;
+    }
+    .navbar_header{
+        .navbar_header_brand{
+            font-size: ($size * 4.5); //35px
+            font-family: Anton;
+            color: $header_text_color;
+            text-shadow: 0 0 2px #fff, 
+                    -1px -1px 0 silver,
+                    -2px -2px 1px silver;
+            &:hover{
+                cursor: pointer;                    
+                background-color: #666666;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+            }
         }
-        .navbar_header{
-            .navbar_header_brand{
-             font-size: ($size * 4.5); //35px
-             font-family: Anton;
-             color: $header_text_color;
+    }
+    .nav_menu{
+        .nav_menu_item{          
+            border-left:1px solid yellow;
+            &:first-child {
+                border:none; 
+                }
+            a{
+                color:$header_text_color;
+                font-size: ($size * 2);
+                font-family: 'Domine', serif;
                 &:hover{
                     cursor: pointer;                    
                     background-color: #666666;
                     -webkit-background-clip: text;
                     -moz-background-clip: text;
-                    background-clip: text;
                     color: transparent;
                     text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
                 }
-            }
-        }
-        .nav_menu{
-            .nav_menu_item{          
-                border-left:1px solid yellow;
-                &:first-child {
-                    border:none; 
-                   }
-                a{
-                    color:$header_text_color;
-                    font-size: ($size * 2);
-                    font-family: 'Domine', serif;
-                    &:hover{
-                        cursor: pointer;                    
-                        background-color: #666666;
-                        -webkit-background-clip: text;
-                        -moz-background-clip: text;
-                        color: transparent;
-                        text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
-                    }
-                }        
-            }    
-        }
+            }        
+        }    
     }
+}
 }

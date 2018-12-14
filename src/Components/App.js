@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
-import { BrowserRouter , Route } from 'react-router-dom';
-import createBrowserHistory from 'history/createBrowserHistory';
+import { HashRouter as Router } from 'react-router-dom';
 import Header from './header';
 import Footer from './footer';
 import Main from './main';
 import './app.scss';
-
-const history = createBrowserHistory();
+// import { BrowserRouter , Router } from 'react-router-dom';
+//import createBrowserHistory from 'history/createBrowserHistory';
+// const history = createBrowserHistory();
 
 class App extends Component {
   render() {
     return (
-        <BrowserRouter history={history}>
+        <Router >
             <div className="app">
               <Header/>
                  <Main/>
               <Footer/>
             </div>   
-        </BrowserRouter>    
+        </Router>    
     );
   }
 }

@@ -1,0 +1,47 @@
+$footer_text_color:rgb(236, 240, 217);
+$background_footer: rgb(83, 63, 63);
+$size : 1rem;
+
+.brokers{
+width: 90%;
+min-height: ($size * 20);
+border-top: 1px solid $background_footer;
+margin: $size auto;
+display: flex;
+flex-direction: row;
+align-items: baseline;
+flex-wrap: wrap;
+justify-content: space-around;
+.brokers_title{
+    width: 50%;
+    text-align: center;text-shadow: 0 0 2px #fff, 
+                -1px -1px 0 hsl(80, 70%, 35%),
+                -2px -2px 1px hsl(80, 70%, 35%),
+                -2px -2px 2px hsl(80, 10%, 15%);
+        h2{
+        font-family: Anton;
+        }
+}
+.brokers_search-bar{
+    width: 50%;
+    .search-input{
+        width: 80%;
+        outline: none;
+        padding-left: ($size * 4.2);
+        padding-bottom: $size;
+        box-sizing: border-box;
+        border: none;
+        transition: border-bottom .3s linear;
+        font-size: ($size * 2);
+    }
+}
+.brokers_list{
+    width: 100%;
+    min-height: ($size * 40);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: ($size * 1.6);
+}
+}

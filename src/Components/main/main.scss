@@ -1,6 +1,9 @@
+$size : 1rem;
+
 main{
     width: 100%;
     min-height: 20px;
     background: white;
     flex-grow: 0;
+    margin-top: ($size * 9);
 }

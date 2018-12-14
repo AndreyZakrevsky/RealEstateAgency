@@ -1,0 +1,82 @@
+[
+    {
+  "id": 1 ,     
+  "name":"Velvet Vachon",
+  "status": "Senior Broker",
+  "email": "velvet@gmail.com",
+  "phone": "+4029392020330",
+  "img": "violet.png"
+},
+{
+    "id": 2,     
+    "name":"Arlan Anello",
+    "status": "Senior Broker",
+    "email": "arlan@gmail.com",
+    "phone": "+4026422020330",
+    "img": "arlan.png"
+  },
+  {
+    "id": 3 ,     
+    "name":"Benton Colley",
+    "status": "Junior Broker",
+    "email": "benton@gmail.com",
+    "phone": "+4026422020330",
+    "img": "benton.png"
+  },
+  {
+    "id": 4 ,     
+    "name":"Floyd Fukuda",
+    "status": "Junior Broker",
+    "email": "floyd@gmail.com",
+    "phone": "+4026422020330",
+    "img": "floyd.png"
+  },
+  {
+    "id": 5 ,     
+    "name":"Elena Cully",
+    "status": "Senior Broker",
+    "email": "elena@gmail.com",
+    "phone": "+4026422020330",
+    "img": "elena.png"
+  },
+  {
+    "id": 6 ,     
+    "name":"Burton Brooke",
+    "status": "Senior Broker",
+    "email": "burton@gmail.com",
+    "phone": "+4026422020330",
+    "img": "burton.png"
+  },
+  {
+    "id": 7 ,     
+    "name":"Ressie Rottman",
+    "status": "Senior Broker",
+    "email": "ressie@gmail.com",
+    "phone": "+4026422020330",
+    "img": "ressie.png"
+  },
+  {
+    "id": 8 ,     
+    "name":"Reed Recio",
+    "status": "Senior Broker",
+    "email": "reed@gmail.com",
+    "phone": "+4026422020330",
+    "img": "reed.png"
+  },
+  {
+    "id": 9 ,     
+    "name":"Nancee Bluford",
+    "status": "Senior Broker",
+    "email": "nancee@gmail.com",
+    "phone": "+4026422020330",
+    "img": "nancee.png"
+  },
+  {
+    "id": 10 ,     
+    "name":"Alan Scott",
+    "status": "Senior Broker",
+    "email": "alan@gmail.com",
+    "phone": "+4026422020330",
+    "img": "alan.png"
+  }
+]
