@@ -31,8 +31,49 @@ font-family: Anton ;
                 }             
             }
         }
-        .body_description{
-
+        .body_benefits{
+            width: 100%;
+            min-height: 200px;
+            margin: 20px ;
+            display: flex;
+            flex-direction: row;          
+            flex-wrap: wrap;
+            justify-content: space-between;        
+                .body_benefits_img{
+                    width: 560px;
+                    margin:  auto;
+                    overflow: hidden;     
+                }
+                .body_benefits_text{
+                    width: 560px;
+                    margin: 10px auto;
+                    text-align: center;
+                    font-family: 'Domine', serif; 
+                    font-size: ( $size * 1.7 );
+                    text-shadow: 1px 1px 2px silver, 0 0 1em silver;
+                    color:$background_home;
+                      h2{
+                        font-family: Anton ; 
+                        }
+                      p{
+                          margin-top: 80px;
+                      }
+                }
+        }
+        .body_deal{
+            width: 100%;
+            background:rgb(185, 151, 151);
+            min-height: 250px; 
+            display: flex;
+            flex-direction: row;          
+            flex-wrap: wrap;
+            justify-content: space-between;  
+                .body_deal_item{
+                    width: 250px;
+                    margin: 10px auto;
+                    font-size: 20px;
+                    color:black;
+                }
         }
     }
 }

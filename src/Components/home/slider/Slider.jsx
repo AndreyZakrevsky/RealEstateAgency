@@ -16,6 +16,9 @@ export default class SimpleSlider extends Component {
                 <div>
                     <img src="images/third_slider.jpg" alt="Slider" />         
                 </div>
+                <div>
+                    <img src="images/slider.png" alt="Slider" />         
+                </div>
             </Carousel> 
     );
   }
