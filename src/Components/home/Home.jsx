@@ -26,22 +26,18 @@ const Home = ()=>(
             </div>     
             <div className="body_deal">
                 <div className="body_deal_item">
-                   <span>&#9745;</span>
                    <h2>250</h2>
                    <p>DEALS</p>
                 </div>
                 <div className="body_deal_item">
-                   <span>&#9786;</span>
                    <h2>320</h2>
                    <p>SATISFIED CUSTOMERS</p>
                 </div>
                 <div className="body_deal_item">
-                   <span>&#10066;</span>
                    <h2>140</h2>
                    <p>OBJECTS</p>
                 </div>
                 <div className="body_deal_item">
-                   <span>&#36;</span>
                    <h2>152 871</h2>
                    <p>SUM OF SALES AND SHOPPING</p>
                 </div>

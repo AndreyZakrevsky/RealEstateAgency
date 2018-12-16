@@ -1,0 +1,99 @@
+$size : 1rem;
+$buttons_color:rgb(83, 63, 63);
+
+.contacts{
+min-height: ( $size * 66 );
+margin-top: $size ;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+flex-wrap: wrap;
+padding: 30px;
+.contact_contant{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .contact_contant_form{
+    max-width: ( $size * 45 );
+    min-height: ( $size * 50 );
+    .contact_form{
+        .input_contact{
+            width: 100%;
+            height: ( $size * 4 );
+            font-size: ( $size * 2 );
+            margin-bottom: ( $size * 3 );
+            border: none;
+            border-bottom: ( $size * 0.2 ) solid silver;
+            outline: none;
+        }
+        .message_contact{
+            width: 100%;
+            height: ( $size * 25 );
+            font-size: ( $size * 2 );
+            border: ( $size * 0.2 ) solid silver;
+            outline: none;
+            font-family: 'Domine', serif;
+        }
+        .input_contact[type=submit]{
+            background: white;
+            margin-top: ( $size * 2 );
+            width: ( $size * 13 );
+            color: $buttons_color ; 
+            border: 1px solid $buttons_color;
+            font-size: ( $size * 1.7 );
+            border-radius: ( $size * 5 );
+            padding: ( $size * 1 ) ( $size * 3 );
+            font-family: 'Domine', serif; 
+            box-shadow:0 0 10px rgba(0,0,0,0.5);  
+            &:hover{
+                color:white;
+                background: black;
+                box-shadow: 1px 1px 2px blueviolet, 0 0 1em blueviolet;
+                text-shadow: 1px 1px 2px blueviolet, 0 0 1em blueviolet;
+            }             
+        }
+    }
+    }
+   
+}
+.contact_contant_map{
+    max-width: ( $size * 60 );
+    min-height: ( $size * 50 );
+    background: red;
+    .contact_contant_map_data{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        .map_data_item{
+            margin: ( $size * 2 ) auto;
+            width: ( $size * 20 );
+            min-height: ( $size * 4 );
+            color: green;
+            font-size: ( $size * 1.6 );
+            margin-top: ( $size * 6);
+        }
+    }
+    }
+}
+
+@media screen and (max-width: 730px){
+    .contact_contant{
+        .contact_contant_form{
+            .contact_form{       
+                .input_contact[type=submit]{                  
+                    margin-left: calc((100% - 130px)/2);
+                }
+            }
+        }
+        .contact_contant_map{
+            .contact_contant_map_data{
+                .map_data_item{
+                    margin-left:calc((100% - 75%)/2) !important;
+                }   
+            }
+        }
+    }    
+}

@@ -1,0 +1,14 @@
+$size : 1rem;
+
+.about{
+width: 100%;
+min-height: ($size * 60);
+margin: ($size * 2) auto;
+border: 1px solid silver;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+text-align: left;
+padding: ($size * 1.5) ($size * 4);
+font-size: ($size * 1.8);  
+opacity: 0.8;
+font-family: 'Domine', serif;  
+}
