@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from './slider';
 import './home.scss';
+import { Link } from 'react-router-dom';
 
 const Home = ()=>(
     <div className="home">
@@ -8,8 +9,8 @@ const Home = ()=>(
         <h2>We have what you need.</h2>
         <div className="home_body">
             <div className="body_buy_rent">
-                <a href="">Buy property</a>
-                <a href="">Rent property</a>
+                <Link to="/buy-property">Buy property</Link> 
+                <Link to="/rent-property">Rent property</Link>      
             </div>  
             <div className="body_benefits">
                <div className="body_benefits_img">

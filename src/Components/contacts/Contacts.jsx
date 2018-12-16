@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Contacts = ()=>(
     <div>
         
-               <Link to="/contacts/all">All contacts</Link>    
+               <Link to="/buy-property">All contacts</Link>    
     </div>
 );
 
