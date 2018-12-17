@@ -5,7 +5,6 @@ import './about.scss';
  const About = ()=>(
     <div className="about">
         <h2>About company </h2>
-        <hr/>
         <p>Founded in 1993, Estate Agency is a recognized market leader and the largest real estate agency in Kyiv.
 
           Eight branches of Blagovist real estate agency, operating in different districts of Kyiv, have about 800 employees who provide customers with a full range of professional real estate services.

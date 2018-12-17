@@ -5,21 +5,21 @@ header{
 width: 100%;
 padding-top: ($size * 2);
 flex-grow: 0;
-background: white;
 padding: 0;
 .navbar{
     background: white;
+    padding-top: 20px;
     border:none;
     position: fixed;
     z-index: 1;     
     width: 100%;
-    min-height: ($size * 7); 
+    min-height: ($size * 8); 
     .navbar_toggle{
         background:$header_text_color;
     }
     .navbar_header{
         .navbar_header_brand{
-            font-size: ($size * 4.5); //35px
+            font-size: ($size * 4.5); 
             font-family: Anton;
             color: $header_text_color;
             text-shadow: 0 0 2px #fff, 
