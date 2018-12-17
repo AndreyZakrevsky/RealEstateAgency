@@ -9,6 +9,15 @@ flex-direction: row;
 justify-content: space-between;
 flex-wrap: wrap;
 padding: 30px;
+.contact_title{
+    width: 100%;
+    margin: ( $size * 5 ) auto;
+    .contact_title_text{
+            font-size: ( $size * 4 );
+            font-family: 'Domine', serif;
+            color: $buttons_color;
+        }     
+}
 .contact_contant{
     display: flex;
     flex-direction: row;
@@ -60,7 +69,6 @@ padding: 30px;
 .contact_contant_map{
     max-width: ( $size * 60 );
     min-height: ( $size * 50 );
-    background: red;
     .contact_contant_map_data{
         display: flex;
         flex-direction: row;
@@ -71,13 +79,32 @@ padding: 30px;
             margin: ( $size * 2 ) auto;
             width: ( $size * 20 );
             min-height: ( $size * 4 );
-            color: green;
+            color: rgb(55, 63, 34);
             font-size: ( $size * 1.6 );
             margin-top: ( $size * 6);
+            &:hover{
+                color:white;
+                text-shadow: 1px 1px 2px blueviolet, 0 0 1em blueviolet;
+            }            
         }
     }
-    }
+  }
 }
+
+.point{
+    font-size: ( $size * 1.6 );
+    font-family: 'Domine', serif; 
+    color: white; 
+    background: rgb(202, 198, 198);
+    padding: 15px 10px;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+}
+
 
 @media screen and (max-width: 730px){
     .contact_contant{

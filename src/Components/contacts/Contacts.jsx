@@ -3,8 +3,12 @@ import './contacts.scss';
 import Map from './map/GoogleMapComponent';
 
 
+
 const Contacts = ()=>(
     <div className="contacts">
+        <div class="contact_title">
+          <h2 class="contact_title_text">Text Us</h2>
+       </div>
        <div className="contact_contant">
             <div className="contact_contant_form">
                <form action="#" className="contact_form">
@@ -20,13 +24,13 @@ const Contacts = ()=>(
           <Map/>
            <div className="contact_contant_map_data">
                <div className="map_data_item">
-                    <p>LSE Houghton Street London WC2A 2AE UK</p>
+                    <p> Vinnitsa SomeStreet 23a</p>
                </div>
                <div className="map_data_item">
-                    <p>zak111revsky@gmail.com</p>
+                    <p>someemail@gmail.com</p>
                </div>
                <div className="map_data_item">
-                    <p>+38(096)2090490</p>
+                    <p>+647822090490</p>
                </div>
            </div>
        </div>
