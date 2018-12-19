@@ -30,6 +30,7 @@ justify-content: space-around;
         padding-bottom: $size;
         box-sizing: border-box;
         border: none;
+        border-bottom: 1px solid yellow;
         transition: border-bottom .3s linear;
         font-size: ($size * 2);
     }

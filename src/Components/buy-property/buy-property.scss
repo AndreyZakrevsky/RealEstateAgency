@@ -1,3 +1,46 @@
-.buy-property{
-    h1{color:red;}
+$indicate_item: rgb(83, 63, 63);
+
+.property{
+    width: 100%;
+    min-height: 400px;
+    background: rgb(243, 243, 213);
+.property_list{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   .property_list_item{
+       width: 90%;
+       min-height: 100px;
+       background: violet;
+       margin: 5px auto;
+
+   }
+}
+.indicate_blok{
+    width: 100%;
+    min-height: 30px;
+    .indicate_items{    
+        margin: 12px ;
+        cursor: pointer;
+        li{
+            display: inline;
+            font-size: 20px;
+            margin: 10px;
+            font-family: 'Domine', serif;
+             color:$indicate_item;
+            &:hover{
+                color:black;
+                text-shadow: 1px 1px 2px blueviolet, 0 0 1em blueviolet;
+                font-weight: bolder;
+               
+            }
+        }
+    }
+    p{
+        color:$indicate_item;
+        font-size: 20px;
+        font-family: 'Domine', serif;
+        
+    }
+}
 }

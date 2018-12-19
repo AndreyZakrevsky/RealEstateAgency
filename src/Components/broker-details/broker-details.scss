@@ -10,7 +10,9 @@ display: flex;
 flex-direction: column;
 background: -webkit-linear-gradient(#648880, $background_footer);
 background:    -moz-linear-gradient(#648880, $background_footer); 
-border-radius:16px ;
+border-radius:16px;
+border:1px solid yellow;
+margin-top: 30px;
     .broker_image{ 
         margin-top: $size;   
             img{

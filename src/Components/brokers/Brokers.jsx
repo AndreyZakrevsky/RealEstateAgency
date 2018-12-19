@@ -34,7 +34,7 @@ class Brokers extends React.Component{
                     <h2>Our Brokers</h2>
                 </div>
                 <div className="brokers_search-bar">           
-                   <input  type="text"  className="search-input" placeholder="&#10156; Look for..." onChange={this.handleSearch}/>
+                   <input  type="text"  className="search-input" placeholder=" Look for..." onChange={this.handleSearch}/>
                 </div> 
                 <div className="brokers_list">
                     {  
