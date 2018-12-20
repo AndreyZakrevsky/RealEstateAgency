@@ -35,7 +35,6 @@ class Header extends Component {
 							<NavDropdown eventKey={4} title="Realty" id="basic-nav-dropdown" className="nav_menu_item">
 									<MenuItem eventKey={4.1} componentClass={Link} href="/buy-property" to="/buy-property">Buy</MenuItem>
 									<MenuItem eventKey={4.2} componentClass={Link} href="/rent-property" to="/rent-property">Rent</MenuItem>
-									<MenuItem eventKey={4.3}>Something else here</MenuItem>
 									<MenuItem divider />
 							</NavDropdown>
 							<NavItem eventKey={5} componentClass={Link} href="#" to="/about" className="nav_menu_item">

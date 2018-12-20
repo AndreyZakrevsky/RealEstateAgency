@@ -8,13 +8,13 @@ export default class SimpleSlider extends Component {
     return (
        <Carousel showStatus={false} showThumbs={false} autoPlay={true} infiniteLoop={true} className="slider_item" >
                 <div className="slider_item">
-                    <img src="images/first_slider.jpg" alt="Slider" />					
+                    <img src="fakeDB/slider/images/first_slider.jpg" alt="Slider" />					
                 </div>
                 <div>
-                    <img src="images/second_slider.jpg" alt="Slider" />
+                    <img src="fakeDB/slider/images/second_slider.jpg" alt="Slider" />
                 </div>
                 <div>
-                    <img src="images/third_slider.jpg" alt="Slider" />         
+                    <img src="fakeDB/slider/images/third_slider.jpg" alt="Slider" />         
                 </div>
             </Carousel> 
     );

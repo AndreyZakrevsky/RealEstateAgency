@@ -14,7 +14,7 @@ const Home = ()=>(
             </div>  
             <div className="body_benefits">
                <div className="body_benefits_img">
-                   <img src="images/benefits.jpg" alt=""/>
+                   <img src="fakeDB/slider/images/benefits.jpg" alt=""/>
                </div>
                <div className="body_benefits_text">
                     <h2>Our Benefits</h2>

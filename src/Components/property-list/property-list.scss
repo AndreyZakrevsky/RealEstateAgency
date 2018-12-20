@@ -1,8 +1,50 @@
 $indicate_item: rgb(83, 63, 63);
-$size : 1rem;
+@import "../common-styles.scss";
 
-
-
+.property{
+width: 90%;
+margin: 2px auto;
+min-height: 400px; 
+margin-top: 80px;
+.property_search_block{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    margin-bottom: 40px;
+    .property_search_block_title{
+        width: 100%;
+        text-align: center;
+        color: rgb(83, 63, 63);
+        font-family: 'Domine', serif; 
+    }
+    .search_select_item{
+        width: 200px;
+        margin: 20px auto;
+        .search_select{
+            width: 100%;
+            color: rgb(83, 63, 63);
+            cursor: pointer;
+            border:none;
+            border-bottom: 2px solid yellow;
+            outline: none;
+            font-size: 20px;
+            font-family: 'Domine', serif; 
+        }
+        .search_byName{ 
+            width: 100%;
+            cursor: pointer;
+            border:none;
+            border-bottom: 2px solid yellow;
+            outline: none;
+            font-size: 20px;
+            font-family: 'Domine', serif; 
+        }
+    }
+    
+} 
 .property_list{
 display: flex;
 flex-direction: column;
@@ -93,5 +135,6 @@ p{
     color:$indicate_item;
     font-size: 20px;
     font-family: 'Domine', serif;     
+}
 }
 }

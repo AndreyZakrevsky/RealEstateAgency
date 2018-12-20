@@ -1,6 +1,6 @@
 import React from 'react';
 import PropertyList from '../property-list';
-import './rent-property.scss';
+
 
 class RentProperty extends React.Component{
     constructor(){
@@ -16,8 +16,7 @@ class RentProperty extends React.Component{
              }).then( (res)=> {
                  console.log(res.length);
                 this.setState({realty : res });
-             }).catch( alert );  
-                    
+             }).catch( alert );                    
     }
 
     render(){
