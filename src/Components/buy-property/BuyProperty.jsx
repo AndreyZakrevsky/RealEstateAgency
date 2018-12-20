@@ -1,27 +1,29 @@
 import React from 'react';
 import './buy-property.scss';
-import PropertyList from './PropertyList';
+import PropertyList from '../property-list';
 
 
 class BuyProperty extends React.Component{
     constructor(){
         super();
-        this.state = {realty: [] , filtered: []};
+        this.state = {realty: [] };
     }
 
     componentWillMount(){  
         fetch('fakeDB/realty/realty.json').then( (response)=> { 
                 return response.json();
             }).then( (res)=> {
-                this.setState({realty : res , filtered : res});
-             }).catch( alert );          
+               return res = res.filter( elem=> elem.status === "Sale");
+             }).then( (res)=> {
+                this.setState({realty : res });
+             }).catch( alert );               
     }
 
     render(){
         return(
             <div>
                 {  
-                  (this.state.filtered.length > 0)? <PropertyList  realty={this.state.filtered}/> : "Loading..."
+                  (this.state.realty.length > 0)? <PropertyList  realty={this.state.realty}/> : "Loading..."
                 }
             </div>
         )

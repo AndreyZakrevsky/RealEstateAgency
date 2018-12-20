@@ -1,0 +1,97 @@
+$indicate_item: rgb(83, 63, 63);
+$size : 1rem;
+
+
+
+.property_list{
+display: flex;
+flex-direction: column;
+justify-content: center;
+.property_item{
+    width: 90%;
+    min-height: 100px;
+    background: white;
+    border:1px solid silver;
+    margin: 5px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
+    .property_item_address{
+        text-align: center;
+        font-family: 'Domine', serif; 
+        margin: 10px auto;
+    }
+    .hide_show_block{
+        z-index: -1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .hide_show_gallery{
+            max-height: 700px;
+            max-width: 500px;
+            .image-gallery-image img {
+                height: 400px;
+                height: 300px;
+            }
+        }
+        .hide_show_description{
+            text-align: center;
+            .description_list{
+                list-style-type: none;
+                .description_list_elem{
+                    color:rgb(83, 63, 63);;
+                    text-shadow: 1px 1px 2px silver, 0 0 1em silver;
+                    text-decoration: none;
+                    font-family: 'Domine', serif; 
+                }   
+            }
+        }
+    }
+    .prop_main_img{
+        width: 100px;
+        height: 100px;
+    }
+    .show_btn{
+    outline: none;
+    margin: ( $size * 2.2 );
+    color: $indicate_item ; 
+    background: white;
+    border: 1px solid $indicate_item;
+    font-size: ( $size * 1.7 );
+    border-radius: ( $size * 5 );
+    padding: ( $size * 0.5 ) ( $size * 3 );
+    font-family: 'Domine', serif;  
+        &:hover{     
+            box-shadow: 1px 1px 1px blueviolet, 0 0 1em blueviolet;
+        }             
+    }
+}
+}
+
+.indicate_blok{
+width: 100%;
+min-height: 30px;
+.indicate_items{    
+    margin: 12px ;
+    cursor: pointer;
+    li{
+        display: inline;
+        font-size: 20px;
+        margin: 10px;
+        font-family: 'Domine', serif;
+            color:$indicate_item;
+        &:hover{
+            color:black;
+            text-shadow: 1px 1px 2px blueviolet, 0 0 1em blueviolet;
+            font-weight: bolder;
+            
+        }
+    }
+}
+p{
+    color:$indicate_item;
+    font-size: 20px;
+    font-family: 'Domine', serif;     
+}
+}

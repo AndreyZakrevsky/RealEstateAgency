@@ -1,5 +1,6 @@
 import React from 'react';
-import PropertyItem from './PropertyDtails';
+import PropertyItem from './PropertyItem';
+import './property-list.scss';
 
 class PropertyList extends React.Component {
     constructor() {
@@ -13,7 +14,7 @@ class PropertyList extends React.Component {
     }
   
     handleClick(event) {
-        
+      window.scrollTo(0, 0);
       this.setState({
         currentPage: Number(event.target.id)
       });

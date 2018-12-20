@@ -6,7 +6,7 @@ import Contacts from '.././contacts';
 import Brokers from '.././brokers';
 import BuyProperty from '../buy-property';
 import RentProperty from '../rent-property';
-import Gallery from '../gallery';
+import MyGallery from '../gallery';
 
 
 class AllRouters extends Component {
@@ -19,7 +19,7 @@ class AllRouters extends Component {
             <Route  path='/brokers' component={Brokers} />
             <Route  path='/buy-property' component={BuyProperty} />
             <Route  path='/rent-property' component={RentProperty} />
-            <Route  path='/gallery' component={Gallery} />
+            <Route  path='/gallery' component={MyGallery} />
         </div>   
      );
    }
