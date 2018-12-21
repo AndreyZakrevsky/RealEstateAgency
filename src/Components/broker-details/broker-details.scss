@@ -1,6 +1,4 @@
-$footer_text_color:rgb(236, 240, 217);
-$background_footer: rgb(83, 63, 63);
-$size : 1rem;
+@import "../common-styles.scss";
 
 .broker_kard{
 width: ($size * 41);  
@@ -8,10 +6,10 @@ min-height: ($size * 15);
 margin: $size auto;
 display: flex;
 flex-direction: column;
-background: -webkit-linear-gradient(#648880, $background_footer);
-background:    -moz-linear-gradient(#648880, $background_footer); 
+background: -webkit-linear-gradient(#687572, $brown_color );
+background:    -moz-linear-gradient(#648880, $brown_color ); 
 border-radius:16px;
-border:1px solid yellow;
+border:1px solid $yellow_color;
 margin-top: 30px;
     .broker_image{ 
         margin-top: $size;   
@@ -23,11 +21,11 @@ margin-top: 30px;
     }
     .broker_body{
         text-align: center;
-        color:rgb(217, 239, 240);
-        font-family: Anton;
+        color:$silver_color;
+        font-family: $font_anton;
         p{
             font-size: ($size * 1.6);
-            font-family: 'Domine', serif;
+            font-family: $font_domine, serif;
         }
     }   
 }

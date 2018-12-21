@@ -1,46 +1,45 @@
-$indicate_item: rgb(83, 63, 63);
 @import "../common-styles.scss";
 
 .property{
 width: 90%;
 margin: 2px auto;
-min-height: 400px; 
-margin-top: 80px;
+min-height: ($size * 40); 
+margin-top: ($size * 8);
 .property_search_block{
     width: 100%;
-    min-height: 100px;
+    min-height: ($size * 10);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap:wrap;
-    margin-bottom: 40px;
+    margin-bottom: ($size * 4);
     .property_search_block_title{
         width: 100%;
         text-align: center;
-        color: rgb(83, 63, 63);
-        font-family: 'Domine', serif; 
+        color: $brown_color;
+        font-family: $font_domine, serif; 
     }
     .search_select_item{
-        width: 200px;
-        margin: 20px auto;
+        width: ($size * 20);
+        margin: ($size * 2) auto;
         .search_select{
             width: 100%;
-            color: rgb(83, 63, 63);
+            color: $brown_color;
             cursor: pointer;
             border:none;
-            border-bottom: 2px solid yellow;
+            border-bottom: 2px solid $yellow_color;
             outline: none;
-            font-size: 20px;
-            font-family: 'Domine', serif; 
+            font-size: ($size * 2);
+            font-family: $font_domine, serif; 
         }
         .search_byName{ 
             width: 100%;
             cursor: pointer;
             border:none;
-            border-bottom: 2px solid yellow;
+            border-bottom: 2px solid $yellow_color;
             outline: none;
-            font-size: 20px;
-            font-family: 'Domine', serif; 
+            font-size: ($size * 2);
+            font-family: $font_domine, serif; 
         }
     }
     
@@ -51,30 +50,29 @@ flex-direction: column;
 justify-content: center;
 .property_item{
     width: 90%;
-    min-height: 100px;
-    background: white;
-    border:1px solid silver;
+    min-height: ($size * 10);
+    background: $white_color;
+    border:1px solid $silver_color;
     margin: 5px auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px $black_color;
     
     .property_item_address{
         text-align: center;
-        font-family: 'Domine', serif; 
-        margin: 10px auto;
+        font-family: $font_domine, serif; 
+        margin: $size  auto;
     }
     .hide_show_block{
-        z-index: -1;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
         .hide_show_gallery{
-            max-height: 700px;
-            max-width: 500px;
+            max-height: ($size * 70);
+            max-width: ($size * 50);
             .image-gallery-image img {
-                height: 400px;
-                height: 300px;
+                height: ($size * 40);
+                height: ($size * 30);
             }
         }
         .hide_show_description{
@@ -82,30 +80,30 @@ justify-content: center;
             .description_list{
                 list-style-type: none;
                 .description_list_elem{
-                    color:rgb(83, 63, 63);;
-                    text-shadow: 1px 1px 2px silver, 0 0 1em silver;
+                    color:$brown_color;
+                    text-shadow: 1px 1px 2px $silver_color, 0 0 1em $silver_color;
                     text-decoration: none;
-                    font-family: 'Domine', serif; 
+                    font-family: $font_domine, serif; 
                 }   
             }
         }
     }
     .prop_main_img{
-        width: 100px;
-        height: 100px;
+        width: ($size * 10);
+        height: ($size * 10);
     }
     .show_btn{
     outline: none;
     margin: ( $size * 2.2 );
-    color: $indicate_item ; 
-    background: white;
-    border: 1px solid $indicate_item;
+    color: $brown_color; 
+    background: $white_color;
+    border: 1px solid $brown_color;
     font-size: ( $size * 1.7 );
     border-radius: ( $size * 5 );
     padding: ( $size * 0.5 ) ( $size * 3 );
-    font-family: 'Domine', serif;  
+    font-family: $font_domine, serif;  
         &:hover{     
-            box-shadow: 1px 1px 1px blueviolet, 0 0 1em blueviolet;
+            box-shadow: 1px 1px 1px $violet_color , 0 0 1em $violet_color ;
         }             
     }
 }
@@ -113,28 +111,28 @@ justify-content: center;
 
 .indicate_blok{
 width: 100%;
-min-height: 30px;
+min-height:($size * 3);
 .indicate_items{    
-    margin: 12px ;
+    margin: ($size * 1.2) ;
     cursor: pointer;
     li{
         display: inline;
-        font-size: 20px;
-        margin: 10px;
-        font-family: 'Domine', serif;
-            color:$indicate_item;
+        font-size: ($size * 2);
+        margin: $size ;
+        font-family: $font_domine, serif;
+            color:$brown_color;
         &:hover{
-            color:black;
-            text-shadow: 1px 1px 2px blueviolet, 0 0 1em blueviolet;
+            color:$black_color;
+            text-shadow: 1px 1px 2px $violet_color , 0 0 1em $violet_color ;
             font-weight: bolder;
             
         }
     }
 }
 p{
-    color:$indicate_item;
-    font-size: 20px;
-    font-family: 'Domine', serif;     
+    color:$brown_color;
+    font-size: ($size * 2);
+    font-family: $font_domine, serif;     
 }
 }
 }

@@ -17,9 +17,11 @@ class MyGallery extends React.Component {
              }).then( (res)=> {
                 let imgArr = [];
                 res.map( (el)=>{
-                    el.map( (e)=>{
-                        imgArr.push(e);
-                    })
+                        el.map( (e)=>{
+                            imgArr.push(e);
+                            return imgArr; 
+                        })
+                  return imgArr;  
                })
                 this.setState({images : imgArr });
              }).catch( alert );               
@@ -27,20 +29,22 @@ class MyGallery extends React.Component {
 
     render(){
         const {images} = this.state;
-        const scr =[];
-        images.map( (img)=>{
+        const src =[];
+        images.map( (img , i)=>{
                 const itemImg ={
                     src: "fakeDB/realty/img/"+ img,
                     width: (Math.random() * (3 - 1)+ 1),
-                    height: (Math.random() * (3 - 1)+ 1)
+                    height: (Math.random() * (3 - 1)+ 1),
+                    key:i
                 } 
-                scr.push(itemImg);
+                src.push(itemImg);
+                return src;
             }); 
         
         return(
             <div className="gallery">
               {
-                   (this.state.images.length  !== 0) && <Gallery photos={scr} />
+                   (this.state.images.length  !== 0) && <Gallery photos={src} />
               }
             </div>
         )

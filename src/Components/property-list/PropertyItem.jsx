@@ -21,13 +21,14 @@ class PropertyItem extends React.Component{
          const {address ,id , status ,type , rooms , area , price , img} = this.props.realty;
          const{isOpen} = this.state;
          const src = "fakeDB/realty/img/"+ img[0];
-         const scrGal =[];
+         const srcGal =[];
             img.map( (img)=>{
                 const itemImg ={
                     original: "fakeDB/realty/img/"+ img,
                     thumbnail: "fakeDB/realty/img/"+ img
                 } 
-                scrGal.push(itemImg);
+                srcGal.push(itemImg);
+                return srcGal;
             }); 
         return(
             <div id={id} className="property_item" >
@@ -41,7 +42,7 @@ class PropertyItem extends React.Component{
                 {
                     isOpen &&<div className="hide_show_block">
                                 <div className="hide_show_gallery">
-                                    <ImageGallery items={scrGal}
+                                    <ImageGallery items={srcGal}
                                         disableThumbnailScroll={true}
                                         disableArrowKeys={true}
                                         showNav={true}

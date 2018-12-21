@@ -1,10 +1,10 @@
-$background_brokers: rgb(83, 63, 63);
-$size : 1rem;
+@import "../common-styles.scss";
+
 
 .brokers{
 width: 90%;
 min-height: ($size * 20);
-border-top: 1px solid $background_brokers;
+border-top: 1px solid $brown_color;
 margin: $size auto;
 display: flex;
 flex-direction: row;
@@ -13,10 +13,11 @@ flex-wrap: wrap;
 justify-content: space-around;
 .brokers_title{
     width: 400px;
-    text-align: center;text-shadow: 0 0 2px #fff, 
-                -1px -1px 0 silver,
-                -2px -2px 1px silver,
-                -2px -2px 2px silver;
+    text-align: center;
+    text-shadow: 0 0 2px $silver_color, 
+                -1px -1px 0 $silver_color,
+                -2px -2px 1px $silver_color,
+                -2px -2px 2px $silver_color;
         h2{
         font-family: Anton;
         }
@@ -30,7 +31,7 @@ justify-content: space-around;
         padding-bottom: $size;
         box-sizing: border-box;
         border: none;
-        border-bottom: 1px solid yellow;
+        border-bottom: 1px solid $yellow_color;
         transition: border-bottom .3s linear;
         font-size: ($size * 2);
     }

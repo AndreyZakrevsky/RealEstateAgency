@@ -1,5 +1,4 @@
-$size : 1rem;
-$buttons_color:rgb(83, 63, 63);
+@import "../common-styles.scss";
 
 .contacts{
 min-height: ( $size * 66 );
@@ -8,14 +7,14 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 flex-wrap: wrap;
-padding: 30px;
+padding:( $size * 3 );
 .contact_title{
     width: 100%;
     margin: ( $size * 5 ) auto;
     .contact_title_text{
             font-size: ( $size * 4 );
-            font-family: 'Domine', serif;
-            color: $buttons_color;
+            font-family: $font_domine, serif;
+            color: $brown_color;
         }     
 }
 .contact_contant{
@@ -33,33 +32,33 @@ padding: 30px;
             font-size: ( $size * 2 );
             margin-bottom: ( $size * 3 );
             border: none;
-            border-bottom: ( $size * 0.2 ) solid silver;
+            border-bottom: ( $size * 0.2 ) solid $silver_color;
             outline: none;
         }
         .message_contact{
             width: 100%;
             height: ( $size * 25 );
             font-size: ( $size * 2 );
-            border: ( $size * 0.2 ) solid silver;
+            border: ( $size * 0.2 ) solid $silver_color;
             outline: none;
-            font-family: 'Domine', serif;
+            font-family: $font_domine, serif;
         }
         .input_contact[type=submit]{
-            background: white;
+            background: $white_color;
             margin-top: ( $size * 2 );
             width: ( $size * 13 );
-            color: $buttons_color ; 
-            border: 1px solid $buttons_color;
+            color: $brown_color ; 
+            border: 1px solid $brown_color;
             font-size: ( $size * 1.7 );
             border-radius: ( $size * 5 );
             padding: ( $size * 1 ) ( $size * 3 );
-            font-family: 'Domine', serif; 
-            box-shadow:0 0 10px rgba(0,0,0,0.5);  
+            font-family: $font_domine, serif; 
+            box-shadow:0 0 10px $black_color;  
             &:hover{
-                color:white;
-                background: black;
-                box-shadow: 1px 1px 2px blueviolet, 0 0 1em blueviolet;
-                text-shadow: 1px 1px 2px blueviolet, 0 0 1em blueviolet;
+                color:$white_color;
+                background: $black_color;
+                box-shadow: 1px 1px 2px $violet_color , 0 0 1em $violet_color ;
+                text-shadow: 1px 1px 2px $violet_color , 0 0 1em $violet_color ;
             }             
         }
     }
@@ -83,8 +82,8 @@ padding: 30px;
             font-size: ( $size * 1.6 );
             margin-top: ( $size * 6);
             &:hover{
-                color:white;
-                text-shadow: 1px 1px 2px blueviolet, 0 0 1em blueviolet;
+                color:$white_color;
+                text-shadow: 1px 1px 2px $violet_color , 0 0 1em $violet_color ;
             }            
         }
     }
@@ -93,9 +92,9 @@ padding: 30px;
 
 .point{
     font-size: ( $size * 1.6 );
-    font-family: 'Domine', serif; 
-    color: white; 
-    background: rgb(202, 198, 198);
+    font-family: $font_domine, serif; 
+    color: $white_color; 
+    background: $silver_color;
     padding: 15px 10px;
     display: inline-flex;
     text-align: center;

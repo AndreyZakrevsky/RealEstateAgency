@@ -14,7 +14,6 @@ class RentProperty extends React.Component{
             }).then( (res)=> {
                return res = res.filter( elem=> elem.status === "Rent");
              }).then( (res)=> {
-                 console.log(res.length);
                 this.setState({realty : res });
              }).catch( alert );                    
     }

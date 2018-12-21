@@ -1,10 +1,9 @@
-$size : 1rem;
-$background_home: rgb(83, 63, 63);
-$buttons_color:rgb(83, 63, 63);
+
+@import "../common-styles.scss";
 
 .home{
 text-align: center;
-font-family: Anton ;
+font-family: $font_anton;
     .home_body{
         display: flex;
         flex-direction: column;
@@ -17,17 +16,17 @@ font-family: Anton ;
             display: inline-block;
             text-decoration: none;
             margin: ( $size * 2.2 );
-            color: $buttons_color ; 
-            border: 1px solid $background_home;
+            color: $brown_color ; 
+            border: 1px solid $brown_color;
             font-size: ( $size * 1.7 );
             border-radius: ( $size * 5 );
             padding: ( $size * 1 ) ( $size * 3 );
-            font-family: 'Domine', serif; 
-            box-shadow: 1px 1px 2px yellow, 0 0 1em yellow;  
+            font-family: $font_domine, serif; 
+            box-shadow: 1px 1px 2px $yellow_color, 0 0 1em $yellow_color;  
             &:hover{
                 color:white;
-                background: $background_home;
-                box-shadow: 1px 1px 2px blueviolet, 0 0 1em blueviolet;
+                background: $brown_color;
+                box-shadow: 1px 1px 2px $violet_color, 0 0 1em $violet_color;
             }             
           }
         }
@@ -46,14 +45,14 @@ font-family: Anton ;
                 }
                 .body_benefits_text{
                     width: ( $size * 56 );
-                    margin: 10px auto;
+                    margin: $size auto;
                     text-align: center;
-                    font-family: 'Domine', serif; 
+                    font-family: $font_domine, serif; 
                     font-size: ( $size * 1.7 );
-                    text-shadow: 1px 1px 2px silver, 0 0 1em silver;
-                    color:$background_home;
+                    text-shadow: 1px 1px 2px $silver_color, 0 0 1em $silver_color;
+                    color:$brown_color;
                       h2{
-                          font-family: Anton ; 
+                          font-family: $font_anton ; 
                         }
                       p{
                           margin-top: ( $size * 8 );
@@ -71,10 +70,10 @@ font-family: Anton ;
                     width: ( $size * 25 );
                     margin: 10px auto;
                     font-size: ( $size * 2 );
-                    color:rgb(83, 63, 63);
-                    text-shadow: 1px 1px 2px silver, 0 0 1em silver;
+                    color:$brown_color;
+                    text-shadow: 1px 1px 2px $silver_color, 0 0 1em $silver_color;
                     padding-top: ( $size * 4);
-                    font-family: 'Domine', serif; 
+                    font-family: $font_domine, serif; 
                 }
         }
     }
