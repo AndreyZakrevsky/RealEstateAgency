@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Real Estate Agency sample
+Final project in courses
+Have used (React , scss).
 
 ## Available Scripts
 
